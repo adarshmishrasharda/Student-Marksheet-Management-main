@@ -14,14 +14,14 @@
     <%- include('./Partials/header.ejs')  %> 
 
     <form action="userlogin" id="loginForm" method="post">
-        <section class="vh-100 bg-dark" >
+        <section class="vh-100 bg-white" >
             <div class="container h-100">
               <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-12 col-md-5 col-lg-6 col-xl-5">
-                  <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                <div class="col-12 col-md-5 col-lg-6 col-xl-5 ">
+                  <div class="card bg-dark shadow-2-strong" style="border-radius: 1rem;">
                     <div class="card-body p-5 text-center">
           
-                      <h3 class="mb-5">Sign in</h3>
+                      <h3 class="mb-5 text-white">Sign in</h3>
                       <p id="error" class="text-danger"> <%= errorMesssage %>  </p> 
                       <div class="form-outline mb-4">
                         <input type="text" id="teacherID" class="form-control form-control-lg" placeholder="Teacher ID" name="teacherID" required onclick="changeFunc()"/>
@@ -34,7 +34,7 @@
                       <button class="btn btn-primary btn-lg btn-block" type="submit" >Login</button>
                       <hr class="my-4">
                       <div>
-                        <p class="mb-0">Don't have an account? <a href="newuser" class="text-black-50 fw-bold">Sign Up</a></p>
+                        <p class="mb-0 text-white">Don't have an account? <a href="newuser" class="text-white-50 fw-bold">Sign Up</a></p>
                       </div>
                     </div>
                   </div>
