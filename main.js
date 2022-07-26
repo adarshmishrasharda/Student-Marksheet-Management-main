@@ -58,6 +58,8 @@ app.post('/register', urlencodedParser, async (req, res) => {
     });
     if (data.length == 0) {
         const user = await TeacherData.create({ id: req.body.teacherID, email: req.body.mail, name: req.body.teacherName, password: req.body.passwd });
+        
+        res.render('teachersLogin', { errorMesssage: "" });
     }
     else {
 
