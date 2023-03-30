@@ -2,8 +2,8 @@
 
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('dynamicsitedb','Adarsh','Aman@123',{
-    host:"dynamicsitedb.mysql.database.azure.com",
+const sequelize = new Sequelize('adarshmysqlserver','adarsh','Aman@123',{
+    host:"adarshmysqlserver.mysql.database.azure.com",
     dialect:"mysql"
 });
 
